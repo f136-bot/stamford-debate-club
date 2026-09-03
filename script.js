@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const successMessage = document.getElementById('successMessage');
   const topicForm = document.getElementById('topicForm');
   const topicSuccessMessage = document.getElementById('topicSuccessMessage');
+  const joinForm = document.getElementById('joinForm');
+  const joinSuccessMessage = document.getElementById('joinSuccessMessage');
   const submitted = new URLSearchParams(window.location.search).get('submitted');
 
   if (submitted === '1') {
@@ -12,6 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (topicSuccessMessage) {
       topicSuccessMessage.classList.add('show');
+    }
+
+    if (joinSuccessMessage) {
+      joinSuccessMessage.classList.add('show');
     }
   }
 
@@ -43,6 +49,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         topicForm.reset();
+      }
+    });
+  }
+
+  if (joinForm) {
+    joinForm.addEventListener('submit', function (event) {
+      const formAction = joinForm.action || '';
+
+      if (!formAction.includes('formsubmit.co')) {
+        event.preventDefault();
+
+        if (joinSuccessMessage) {
+          joinSuccessMessage.classList.add('show');
+        }
+
+        joinForm.reset();
       }
     });
   }

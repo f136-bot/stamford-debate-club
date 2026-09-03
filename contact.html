@@ -23,7 +23,7 @@
           <a href="activities.html">Activities</a>
           <a href="topics.html">Submit Topic</a>
           <a href="contact.html" class="active">Contact</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCevJxWN49QjfQJ-eBzzeomflN6wFePAlfBcm75fVseMZG7w/viewform?usp=dialog" target="_blank" rel="noopener">Join Us</a>
+          <a href="contact.html#join-form">Join Us</a>
         </nav>
       </div>
     </header>
@@ -77,6 +77,51 @@
               </div>
 
               <div id="successMessage" class="success-message">Thanks for reaching out! Your message has been sent successfully.</div>
+            </form>
+
+            <div id="join-form" class="section-header" style="margin-top: 36px; margin-bottom: 18px;">
+              <span>Club Application</span>
+              <h2>Join the Debate Club</h2>
+            </div>
+
+            <form id="joinForm" action="https://formsubmit.co/debateclubemail@gmail.com" method="POST">
+              <div class="form-grid">
+                <div>
+                  <label for="joinName">Full Name</label>
+                  <input id="joinName" name="name" type="text" placeholder="Your full name" required />
+                </div>
+
+                <div>
+                  <label for="joinEmail">Email</label>
+                  <input id="joinEmail" name="email" type="email" placeholder="you@example.com" required />
+                </div>
+
+                <div>
+                  <label for="joinGrade">Grade / Year</label>
+                  <input id="joinGrade" name="grade" type="text" placeholder="e.g. Grade 11" required />
+                </div>
+
+                <div>
+                  <label for="joinTrack">Preferred Track</label>
+                  <select id="joinTrack" name="track" required>
+                    <option value="">Select one</option>
+                    <option value="Chinese Debate Group">Chinese Debate Group</option>
+                    <option value="English Debate Group">English Debate Group</option>
+                    <option value="Either track">Either track</option>
+                  </select>
+                </div>
+
+                <div style="grid-column: 1 / -1;">
+                  <label for="joinReason">Why do you want to join?</label>
+                  <textarea id="joinReason" name="reason" placeholder="Tell us about your interest in debate, public speaking, and critical thinking..." required></textarea>
+                </div>
+              </div>
+
+              <div class="submit-row">
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+              </div>
+
+              <div id="joinSuccessMessage" class="success-message">Thank you! Your application has been submitted successfully.</div>
             </form>
           </div>
 
