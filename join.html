@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us | Stamford American High School Debate Club</title>
+    <meta name="description" content="Apply to join the Stamford American High School Debate Club." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <div class="brand">
+          <div class="brand-mark">
+            <img src="debate-club-logo.png" alt="Stamford American High School Debate Club logo" onerror="this.style.display='none'; this.parentElement.textContent='D';" />
+          </div>
+          <span>Stamford American High School Debate Club</span>
+        </div>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="activities.html">Activities</a>
+          <a href="topics.html">Submit Topic</a>
+          <a href="contact.html">Contact</a>
+          <a href="join.html" class="active">Join Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="hero-inner">
+            <span class="eyebrow">Club Application</span>
+            <h1>Join the Debate Club.</h1>
+            <p>
+              Tell us about your interests and choose the debate track that best fits your goals. Your application will be sent directly to the club email.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-form">
+            <div class="section-header">
+              <span>Application Form</span>
+              <h2>Start your application</h2>
+            </div>
+
+            <form id="joinForm" action="https://formsubmit.co/debateclubemail@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Stamford Debate Club Application" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next" value="https://f136-bot.github.io/stamford-debate-club/join.html?submitted=1" />
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display: none;" />
+
+              <div class="form-grid">
+                <div>
+                  <label for="joinName">Full Name</label>
+                  <input id="joinName" name="name" type="text" placeholder="Your full name" required />
+                </div>
+
+                <div>
+                  <label for="joinEmail">Email</label>
+                  <input id="joinEmail" name="email" type="email" placeholder="your.email@example.com" required />
+                </div>
+
+                <div>
+                  <label for="joinGrade">Grade / Year</label>
+                  <input id="joinGrade" name="grade" type="text" placeholder="e.g. Grade 11" required />
+                </div>
+
+                <div>
+                  <label for="joinTrack">Preferred Track</label>
+                  <select id="joinTrack" name="track" required>
+                    <option value="">Select one</option>
+                    <option value="Chinese Debate Group">Chinese Debate Group</option>
+                    <option value="English Debate Group">English Debate Group</option>
+                    <option value="Either track">Either track</option>
+                  </select>
+                </div>
+
+                <div style="grid-column: 1 / -1;">
+                  <label for="joinReason">Why do you want to join?</label>
+                  <textarea id="joinReason" name="reason" placeholder="Tell us about your interest in debate, public speaking, and critical thinking..." required></textarea>
+                </div>
+              </div>
+
+              <div class="submit-row">
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+              </div>
+
+              <div id="joinSuccessMessage" class="success-message">Thank you! Your application has been submitted successfully.</div>
+            </form>
+          </div>
+
+          <aside>
+            <div class="section-header">
+              <span>What to Expect</span>
+              <h2>A place to think, speak, and grow.</h2>
+            </div>
+
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Two Tracks</strong>
+                <span>Choose the Chinese Debate Group, English Debate Group, or remain open to either.</span>
+              </div>
+
+              <div class="info-item">
+                <strong>Weekly Practice</strong>
+                <span>Our one-group-per-week format creates regular opportunities to prepare and participate.</span>
+              </div>
+
+              <div class="info-item">
+                <strong>Teacher Guidance</strong>
+                <span>Chinese and English teacher mentors support students throughout the club program.</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>© 2026 Stamford American High School Debate Club</div>
+      <a href="mailto:debateclubemail@gmail.com">debateclubemail@gmail.com</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
