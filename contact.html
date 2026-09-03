@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Stamford American High School Debate Club</title>
-    <meta name="description" content="Contact the Stamford American High School Debate Club to learn more about joining or collaborating." />
+    <title>Submit Feedback | Stamford American High School Debate Club</title>
+    <meta name="description" content="Submit an improvement suggestion to the Stamford American High School Debate Club." />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -22,7 +22,7 @@
           <a href="about.html">About</a>
           <a href="activities.html">Activities</a>
           <a href="topics.html">Submit Topic</a>
-          <a href="contact.html" class="active">Contact</a>
+          <a href="contact.html" class="active">Feedback</a>
           <a href="join.html">Join Us</a>
         </nav>
       </div>
@@ -32,10 +32,10 @@
       <section class="page-hero">
         <div class="container">
           <div class="hero-inner">
-            <span class="eyebrow">Contact</span>
-            <h1>Get in touch with the club.</h1>
+            <span class="eyebrow">Feedback</span>
+            <h1>Help us improve the club.</h1>
             <p>
-              We welcome students who are interested in joining, learning more about the program, or collaborating with our club activities.
+              Share ideas that can help us improve our activities, communication, organization, and student experience.
             </p>
           </div>
         </div>
@@ -45,14 +45,16 @@
         <div class="container contact-grid">
           <div class="contact-form">
             <div class="section-header">
-              <span>Inquiry Form</span>
-              <h2>Send us a message</h2>
+              <span>Improvement Suggestions</span>
+              <h2>Tell us what could be better</h2>
             </div>
 
             <form id="contactForm" action="https://formsubmit.co/debateclubemail@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Debate Club Improvement Suggestion" />
+              <input type="hidden" name="_template" value="table" />
               <div class="form-grid">
                 <div>
-                  <label for="contactName">Full Name</label>
+                  <label for="contactName">Name</label>
                   <input id="contactName" name="name" type="text" placeholder="Your name" required />
                 </div>
 
@@ -62,29 +64,37 @@
                 </div>
 
                 <div style="grid-column: 1 / -1;">
-                  <label for="contactSubject">Subject</label>
-                  <input id="contactSubject" name="subject" type="text" placeholder="What would you like to discuss?" required />
+                  <label for="suggestionType">Suggestion Area</label>
+                  <select id="suggestionType" name="suggestion_area" required>
+                    <option value="">Select an area</option>
+                    <option value="Activities">Activities</option>
+                    <option value="Debate topics">Debate topics</option>
+                    <option value="Communication">Communication</option>
+                    <option value="Organization">Organization</option>
+                    <option value="Student experience">Student experience</option>
+                    <option value="Other">Other</option>
+                  </select>
                 </div>
 
                 <div style="grid-column: 1 / -1;">
-                  <label for="contactMessage">Message</label>
-                  <textarea id="contactMessage" name="message" placeholder="Tell us about your question or idea..." required></textarea>
+                  <label for="contactMessage">Your Suggestion</label>
+                  <textarea id="contactMessage" name="suggestion" placeholder="Describe your suggestion and how it could help the club..." required></textarea>
                 </div>
               </div>
 
               <div class="submit-row">
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" class="btn btn-primary">Submit Suggestion</button>
               </div>
 
-              <div id="successMessage" class="success-message">Thanks for reaching out! Your message has been sent successfully.</div>
+              <div id="successMessage" class="success-message">Thank you. Your suggestion has been submitted successfully.</div>
             </form>
 
           </div>
 
           <aside>
             <div class="section-header">
-              <span>Contact Details</span>
-              <h2>Reach out</h2>
+              <span>Why Your Voice Matters</span>
+              <h2>Build a stronger club together.</h2>
             </div>
 
             <div class="info-list">
@@ -94,8 +104,8 @@
               </div>
 
               <div class="info-item">
-                <strong>Response Time</strong>
-                <span>We aim to respond to inquiries within a few school days.</span>
+                <strong>Thoughtful Feedback</strong>
+                <span>Specific, respectful suggestions help us make better decisions.</span>
               </div>
 
               <div class="info-item">
@@ -104,8 +114,8 @@
               </div>
 
               <div class="info-item">
-                <strong>Club Focus</strong>
-                <span>Chinese Debate Group, English Debate Group, critical thinking, and structured discussion</span>
+                <strong>What You Can Suggest</strong>
+                <span>Activities, debate topics, communication, organization, or the overall student experience.</span>
               </div>
             </div>
           </aside>
