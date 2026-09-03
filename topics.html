@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit a Topic | Stamford American High School Debate Club</title>
+    <meta name="description" content="Submit an English or Chinese debate topic to the Stamford American High School Debate Club." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <div class="brand">
+          <div class="brand-mark">
+            <img src="debate-club-logo.png" alt="Stamford American High School Debate Club logo" onerror="this.style.display='none'; this.parentElement.textContent='D';" />
+          </div>
+          <span>Stamford American High School Debate Club</span>
+        </div>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="activities.html">Activities</a>
+          <a href="topics.html" class="active">Submit Topic</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCevJxWN49QjfQJ-eBzzeomflN6wFePAlfBcm75fVseMZG7w/viewform?usp=dialog" target="_blank" rel="noopener">Join Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="hero-inner">
+            <span class="eyebrow">Topic Submission</span>
+            <h1>Help shape our next debate.</h1>
+            <p>
+              Share a thoughtful motion in English or Chinese. Strong topics are clear, balanced, and open to meaningful debate from both sides.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-form">
+            <div class="section-header">
+              <span>Proposal Form</span>
+              <h2>Submit a debate topic</h2>
+            </div>
+
+            <form id="topicForm" action="https://formsubmit.co/debateclubemail@gmail.com" method="POST">
+              <div class="form-grid">
+                <div>
+                  <label for="topicName">Your Name</label>
+                  <input id="topicName" name="name" type="text" placeholder="Your name" required />
+                </div>
+
+                <div>
+                  <label for="topicEmail">Email</label>
+                  <input id="topicEmail" name="email" type="email" placeholder="you@example.com" required />
+                </div>
+
+                <div style="grid-column: 1 / -1;">
+                  <label for="topicTitle">Proposed Motion</label>
+                  <input id="topicTitle" name="topic" type="text" placeholder="Enter your proposed debate topic" required />
+                </div>
+
+                <div style="grid-column: 1 / -1;">
+                  <label for="topicDetails">Why it works</label>
+                  <textarea id="topicDetails" name="details" placeholder="Tell us why this motion is relevant and balanced..." required></textarea>
+                </div>
+              </div>
+
+              <div class="submit-row">
+                <button type="submit" class="btn btn-primary">Submit Topic</button>
+              </div>
+
+              <div id="topicSuccessMessage" class="success-message">Thanks for your suggestion! We will review your debate topic soon.</div>
+            </form>
+          </div>
+
+          <aside>
+            <div class="section-header">
+              <span>Good Motions</span>
+              <h2>What makes a strong topic?</h2>
+            </div>
+
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Balanced</strong>
+                <span>Both sides should have a reasonable case supported by evidence.</span>
+              </div>
+
+              <div class="info-item">
+                <strong>Specific</strong>
+                <span>Use precise wording so the motion can be understood consistently.</span>
+              </div>
+
+              <div class="info-item">
+                <strong>Relevant</strong>
+                <span>Connect the question to student life, society, technology, or current affairs.</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>© 2026 Stamford American High School Debate Club</div>
+      <a href="mailto:debateclubemail@gmail.com">debateclubemail@gmail.com</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

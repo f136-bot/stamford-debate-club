@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Stamford American High School Debate Club</title>
+    <meta name="description" content="Contact the Stamford American High School Debate Club to learn more about joining or collaborating." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <div class="brand">
+          <div class="brand-mark">
+            <img src="debate-club-logo.png" alt="Stamford American High School Debate Club logo" onerror="this.style.display='none'; this.parentElement.textContent='D';" />
+          </div>
+          <span>Stamford American High School Debate Club</span>
+        </div>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="activities.html">Activities</a>
+          <a href="topics.html">Submit Topic</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCevJxWN49QjfQJ-eBzzeomflN6wFePAlfBcm75fVseMZG7w/viewform?usp=dialog" target="_blank" rel="noopener">Join Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="hero-inner">
+            <span class="eyebrow">Contact</span>
+            <h1>Get in touch with the club.</h1>
+            <p>
+              We welcome students who are interested in joining, learning more about the program, or collaborating with our club activities.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-form">
+            <div class="section-header">
+              <span>Inquiry Form</span>
+              <h2>Send us a message</h2>
+            </div>
+
+            <form id="contactForm" action="https://formsubmit.co/debateclubemail@gmail.com" method="POST">
+              <div class="form-grid">
+                <div>
+                  <label for="contactName">Full Name</label>
+                  <input id="contactName" name="name" type="text" placeholder="Your name" required />
+                </div>
+
+                <div>
+                  <label for="contactEmail">Email</label>
+                  <input id="contactEmail" name="email" type="email" placeholder="you@example.com" required />
+                </div>
+
+                <div style="grid-column: 1 / -1;">
+                  <label for="contactSubject">Subject</label>
+                  <input id="contactSubject" name="subject" type="text" placeholder="What would you like to discuss?" required />
+                </div>
+
+                <div style="grid-column: 1 / -1;">
+                  <label for="contactMessage">Message</label>
+                  <textarea id="contactMessage" name="message" placeholder="Tell us about your question or idea..." required></textarea>
+                </div>
+              </div>
+
+              <div class="submit-row">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+
+              <div id="successMessage" class="success-message">Thanks for reaching out! Your message has been sent successfully.</div>
+            </form>
+          </div>
+
+          <aside>
+            <div class="section-header">
+              <span>Contact Details</span>
+              <h2>Reach out</h2>
+            </div>
+
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Email</strong>
+                <a href="mailto:debateclubemail@gmail.com">debateclubemail@gmail.com</a>
+              </div>
+
+              <div class="info-item">
+                <strong>School</strong>
+                <span>Stamford American High School</span>
+              </div>
+
+              <div class="info-item">
+                <strong>Club Focus</strong>
+                <span>Chinese Debate Group, English Debate Group, critical thinking, and structured discussion</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>© 2026 Stamford American High School Debate Club</div>
+      <a href="mailto:debateclubemail@gmail.com">debateclubemail@gmail.com</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
