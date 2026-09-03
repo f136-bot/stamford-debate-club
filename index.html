@@ -467,6 +467,45 @@
         text-transform: uppercase;
       }
 
+      .process-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+        margin-top: 24px;
+      }
+
+      .process-step {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        padding: 24px 22px;
+        box-shadow: 0 12px 28px rgba(15, 31, 51, 0.04);
+      }
+
+      .process-step .step-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: var(--secondary);
+        color: var(--primary-dark);
+        font-weight: 800;
+        margin-bottom: 12px;
+      }
+
+      .process-step h3 {
+        margin: 0 0 8px;
+        font-size: 1.2rem;
+      }
+
+      .process-step p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
       footer {
         padding: 26px 0 40px;
         text-align: center;
@@ -698,6 +737,35 @@
 
           <div class="recommend-actions">
             <a class="btn btn-primary" href="topics.html">Submit Your Topic</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="submission-process">
+        <div class="container">
+          <div class="section-heading">
+            <span>Submission Process</span>
+            <h2>How topic suggestions are reviewed</h2>
+          </div>
+
+          <div class="process-grid">
+            <article class="process-step">
+              <div class="step-number">1</div>
+              <h3>Share your motion</h3>
+              <p>Submit a clear debate topic along with a short explanation of why it is relevant and balanced.</p>
+            </article>
+
+            <article class="process-step">
+              <div class="step-number">2</div>
+              <h3>Review and discuss</h3>
+              <p>Our team examines the topic for fairness, clarity, and whether it invites meaningful argumentation.</p>
+            </article>
+
+            <article class="process-step">
+              <div class="step-number">3</div>
+              <h3>Use it in practice</h3>
+              <p>Selected motions can inspire club discussions, internal debates, and future structured practice sessions.</p>
+            </article>
           </div>
         </div>
       </section>
